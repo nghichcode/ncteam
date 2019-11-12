@@ -2,9 +2,9 @@ var http = require('http');
 var url= require('url');
 var querystring = require('querystring');
 
-var login = require('./login');
-var logout = require('./logout');
-var picking = require('./picking');
+var login = require('./sample/login');
+var logout = require('./sample/logout');
+var picking = require('./sample/picking');
 
 http.createServer(function (req, res) {
 	if (req.url.search("/qr") == 0 ) {
@@ -42,7 +42,7 @@ http.createServer(function (req, res) {
 		} else if (urlParams.pathname == "/api/picking/sacnSerial.json" && correctPicking) {
 			resContent = picking.parse(req.headers['authorization'], params);
 		} else if (urlParams.pathname.search("/config") == 0 ) {
-			var config = require('./config');
+			var config = require('./sample/config');
 			if (urlParams.pathname.search("/get") == 7 && correctCGet ) {
 				// user_name=ncteamvn
 				config.getConfig(res, params.user_name);
