@@ -1,0 +1,27 @@
+{
+  "name": "ncteam",
+  "version": "0.2.0",
+  "description": "NC Server App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "pg": "4.5.7",
+    "formidable":"1.2.1"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "nghichcode",
+  "contributors": [
+    "tincya"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "NCTeam",
+  "description": "NC Server",
+  "repository": "https://github.com/nghichcode/ncteam",
+  "logo": "",
+  "keywords": ["node", "express", "static"]
+}
